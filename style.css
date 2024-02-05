@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    min-height: 100vh;
+    font-size: 16px;
+}
+.cabecalho {
+    padding: 2% 0% 0% 2%;
+}
+textarea {
+    padding: 6% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    resize: none;
+    border:none;
+    outline: none;
+    font-size: 1.8rem;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    
+
+}
+
+.container__entrada{
+    align-items: center;
+}
+.aviso {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 10%;
+    gap: 10px;
+}
+.container__entrada__botoes {
+    padding: 0 0 0 10%;
+    gap: 8px;
+    
+}
+.container__botao__criptografar {
+    background-color: #0A3871;
+    color: #F3F5FC;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+.container__botao__descriptografar {
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #F3F5FC;
+    border-radius: 25px;
+}
+.container__botao__criptografar:hover {
+    background-color: #062244;
+} 
+.container__botao__descriptografar:hover {
+    background-color: #d2d7e9;
+}
+
+.container__resultado {
+    width: 20%;
+    height: 60%;
+    flex-direction: column;
+    display: flex;
+    padding: 7% 2%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    position: absolute;
+    top: 3%;
+    right: 2%;
+
+
+}
+#copyButton {
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+#copyButton:hover {
+    background-color: #d2d7e9;
+}
+
+@media screen and (min-width: 1500px) {
+    /* Adaptação para telas maiores (exemplo: 22 polegadas) */
+    .container__resultado {
+        width: 20%; 
+        height: 60%;
+    }
+    .container__entrada {
+        width: 100%;
+        height: 60%;
+    }
+    textarea {
+        padding: 9% 10% ;
+    }
+    .container__entrada__botoes {
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+.rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

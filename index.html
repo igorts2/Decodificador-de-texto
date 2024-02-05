@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Decodificador</title>
+    <link rel="icon" href="assets/IconeAlura.png" type="assets/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/IconeAlura.png" alt="IconeAlura">
+
+    </header>
+    <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+    <div class="container__entrada">
+        <div class="aviso">
+            <img src="assets/AlertaIcon.png" alt="Icone-de-alerta">
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="container__entrada__botoes">
+            <button onclick="capturarTexto()" class="container__botao__criptografar">Criptografar</button>
+            <button onclick="capturarTextoCriptografado()" class="container__botao__descriptografar">Descriptografar</button>
+        </div>
+    </div>
+    <div class="container__resultado" id="resultadoContainer">
+        <img src="assets/ImagemContainer.png" alt="ImagemContainer">
+        <h1>Nenhuma mensagem encontrada</h1>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <button id="copyButton" style="display: none;" onclick="copiarTexto()">Copiar</button>
+    </div>
+    <footer class="rodape">
+        <p>Desenvolvido por Igor Teixeira</p>
+    </footer>
+    
+</body>
+</html>
